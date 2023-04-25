@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/23 18:03:31 by rerodrig          #+#    #+#             */
-/*   Updated: 2023/04/23 18:03:44 by rerodrig         ###   ########.fr       */
+/*   Created: 2023/04/23 18:49:46 by rerodrig          #+#    #+#             */
+/*   Updated: 2023/04/23 19:11:17 by rerodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// isalnum() checks whether the given character is alphanumeric or not.
-// defined in ctype.h header file.
-// Alphanumeric: A character that is either a letter or a number.
-// Syntax: int isalnum(int x);
+// The strlen() function calculates the length of a given string.
 
+// The strlen() function takes a string as an argument and returns its length. The returned value is of type size_t (an unsigned integer type).
+
+// It is defined in the <string.h> header file
 #include "./include/libft.h"
 
-int ft_isalnum(int c)
+size_t ft_strlen(const char *s)
 {
-    if (ft_isalpha(c) || ft_isdigit(c))
-    {
-        return (8);
-    }
-
-    return (0);
+	size_t i;
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	return (i);
 }
