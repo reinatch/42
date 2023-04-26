@@ -2,6 +2,7 @@
 #include <ctype.h>
 #include <stdio.h>
 #include <string.h>
+#include <strings.h>
 #ifndef HAVE_STRLCPY
 /*
  * '_cups_strlcpy()' - Safely copy two strings.
@@ -68,7 +69,8 @@ void test(size_t size)
 int main(int ac, char **av)
 {
 	char b = *av[1];
-	const char *c = av[1];
+	char d = *av[3];
+	const char *c = av[2];
 	// char *dst = av[1];
 	// const char *src = av[2];
 	// char dst = 'agagag';
@@ -86,6 +88,10 @@ int main(int ac, char **av)
 	printf("ft_isascii: %i\n", ft_isascii(b));
 	// int ft_isprint(int c);
 	printf("ft_isprint: %i\n", ft_isprint(b));
+	// int ft_toupper(int c)
+	printf("ft_toupper: %c\n", ft_toupper(b));
+	// int ft_tolower(int c)
+	printf("ft_tolower: %c\n", ft_tolower(d));
 	// size_t ft_strlen(const char *s);
 	printf("ft_strlen: %zu\n", ft_strlen(c));
 	char *string = av[2];
@@ -122,9 +128,106 @@ int main(int ac, char **av)
 	char haystack[] = "Hello, world!";
 	char needle[] = "world";
 	char *res = ft_strnstr(haystack, needle, strlen(haystack));
-	// char *res1 = strnstr(haystack, needle, strlen(haystack));
 	printf("ft_strnstr:found %s\n", res);
-	// printf("strnstr:found %s\n", res1);
+	// char *ft_strdup(const char *s);
+	char *resdup = ft_strdup("24 duplicado 42!");
+	printf("ft_strdup:found %s\n", resdup);
+	// void ft_bzero(void *s, size_t n);
+	char buffert[] = "42zerado42!";
+	printf("ft_bzero:found %s\n", buffert);
+	bzero(buffert, sizeof(buffert));
+	for (int i = 0; i < sizeof(buffert); i++)
+	{
+		printf("_ %c ", buffert[i]);
+	}
+	printf("\n");
+	// void *ft_memset(void *s, int c, size_t n);
+	char bufmem[] = "42memset42!";
+	printf("ft_memset:found %s\n", bufmem);
+	char cc = '0';
+	ft_memset(bufmem, cc, 6);
+	for (int i = 0; i < sizeof(bufmem); i++)
+	{
+		printf("%c", bufmem[i]);
+	}
+	printf("\n");
+	// void *ft_memcpy(void *dest, const void *src, size_t n)
+	char bufmemcpy[] = "42memcpy42!";
+	printf("ft_memcpy:found %s\n", bufmemcpy);
+	char dest[18];
+	ft_memcpy(dest, bufmemcpy, 6);
+	for (int i = 0; i < sizeof(dest); i++)
+	{
+		printf("%c", dest[i]);
+	}
+	printf("\n");
+	// void *ft_memmove(void *dest, const void *src, size_t n)
+	char bufmemmove[] = "42memmove42!";
+	printf("ft_memmove:found %s\n", bufmemmove);
+	char destm[2];
+	ft_memmove(destm, bufmemmove, 6);
+	for (int i = 0; i < sizeof(destm); i++)
+	{
+		printf("%c", destm[i]);
+	}
+	printf("\n");
+	// void *ft_memchr(const void *s, int c, size_t n)
+	char bufmemchr[] = "42menTchr42!";
+	printf("ft_memchr:found %s\n", bufmemchr);
+	char w = 'Z';
+	char strt[] = "Quando encontrares . segue!";
+	char ct = 'e';
+	ft_memchr(strt, ct, ft_strlen(strt));
+	// for (int i = 0; i < sizeof(bufmemchr); i++)
+	// {
+	printf("%p", ft_memchr(strt, ct, ft_strlen(strt)));
+	// }
+	printf("\n");
+	// int ft_memcmp(const void *s1, const void *s2, size_t n)
+	char bufmemcmp[] = "42menTchr42!";
+	printf("ft_memcmp:found %s\n", bufmemcmp);
+	char strtr[] = "42 e 42";
+	char ctr[] = "24 e 24";
+	ft_memcmp(strtr, ctr, ft_strlen(strtr));
+	// for (int i = 0; i < sizeof(bufmemcmp); i++)
+	// {
+	printf("%d", ft_memcmp(strtr, ctr, ft_strlen(strtr)));
+	// }
+	printf("\n");
+	// int ft_atoi(const char *nptr)
+	char atoi1[] = "15613";
+	char atoi2[] = "-15613";
+	char atoi3[] = "+15asd613";
+	char atoi4[] = "-1561dase3";
+	printf("ft_atoi: %d\n", ft_atoi(atoi1));
+	printf("ft_atoi: %d\n", ft_atoi(atoi2));
+	printf("ft_atoi: %d\n", ft_atoi(atoi3));
+	printf("ft_atoi: %d\n", ft_atoi(atoi4));
+
+	int *array;
+	int i;
+
+	// Allocate an array of 5 integers
+	array = ft_calloc(5, sizeof(int));
+
+	// Check if allocation was successful
+	if (array == NULL)
+	{
+		printf("Error: memory allocation failed\n");
+		return EXIT_FAILURE;
+	}
+
+	// Print the contents of the array
+	printf("Array contents:\n");
+	for (i = 0; i < 5; i++)
+	{
+		printf("%d\n", array[i]);
+	}
+
+	// Free the allocated memory
+	free(array);
+
+	return EXIT_SUCCESS;
 
 	return 0;
 }
