@@ -227,7 +227,14 @@ int main(int ac, char **av)
 	// Free the allocated memory
 	free(array);
 
-	return EXIT_SUCCESS;
+	char bufsubstr[] = "42 substr 42!";
+	printf("ft_substr:found %s\n", bufsubstr);
+	// for (int i = 0; i < sizeof(bufsubstr); i++)
+	// {
+	// printf("%d", substring(bufsubstr, 4, (ft_strlen(bufsubstr) - 4)));
+	printf("%s", ft_substr(bufsubstr, 14, (ft_strlen(bufsubstr) - 4)));
+	// }
+	printf("\n");
 
 	return 0;
 }
