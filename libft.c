@@ -3,6 +3,10 @@
 #include <stdio.h>
 #include <string.h>
 #include <strings.h>
+
+
+// cc libft.c libft.a -o tr -Wall -Wextra -Werror
+
 #ifndef HAVE_STRLCPY
 /*
  * '_cups_strlcpy()' - Safely copy two strings.
@@ -53,19 +57,7 @@ strlcat(char *dst,		 /* O - Destination string */
 	return dstlen + srclen;
 }
 #endif /* !HAVE_STRLCAT */
-void test(size_t size)
-{
-	char string[] = "Hello there, Venus";
-	char buffer[19];
-	int r;
 
-	r = strlcpy(buffer, string, size);
-
-	printf("Copied '%s' into '%s', length %d\n",
-		   string,
-		   buffer,
-		   r);
-}
 int main(int ac, char **av)
 {
 	char b = *av[1];
@@ -136,7 +128,7 @@ int main(int ac, char **av)
 	char buffert[] = "42zerado42!";
 	printf("ft_bzero:found %s\n", buffert);
 	bzero(buffert, sizeof(buffert));
-	for (int i = 0; i < sizeof(buffert); i++)
+	for (long unsigned int i = 0; i < sizeof(buffert); i++)
 	{
 		printf("_ %c ", buffert[i]);
 	}
@@ -146,7 +138,7 @@ int main(int ac, char **av)
 	printf("ft_memset:found %s\n", bufmem);
 	char cc = '0';
 	ft_memset(bufmem, cc, 6);
-	for (int i = 0; i < sizeof(bufmem); i++)
+	for (long unsigned int i = 0; i < sizeof(bufmem); i++)
 	{
 		printf("%c", bufmem[i]);
 	}
@@ -156,7 +148,7 @@ int main(int ac, char **av)
 	printf("ft_memcpy:found %s\n", bufmemcpy);
 	char dest[18];
 	ft_memcpy(dest, bufmemcpy, 6);
-	for (int i = 0; i < sizeof(dest); i++)
+	for (long unsigned int i = 0; i < sizeof(dest); i++)
 	{
 		printf("%c", dest[i]);
 	}
@@ -166,7 +158,7 @@ int main(int ac, char **av)
 	printf("ft_memmove:found %s\n", bufmemmove);
 	char destm[2];
 	ft_memmove(destm, bufmemmove, 6);
-	for (int i = 0; i < sizeof(destm); i++)
+	for (long unsigned int i = 0; i < sizeof(destm); i++)
 	{
 		printf("%c", destm[i]);
 	}
@@ -174,7 +166,6 @@ int main(int ac, char **av)
 	// void *ft_memchr(const void *s, int c, size_t n)
 	char bufmemchr[] = "42menTchr42!";
 	printf("ft_memchr:found %s\n", bufmemchr);
-	char w = 'Z';
 	char strt[] = "Quando encontrares . segue!";
 	char ct = 'e';
 	ft_memchr(strt, ct, ft_strlen(strt));

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/05/17 14:01:30 by rerodrig          #+#    #+#             */
+/*   Updated: 2023/05/17 14:01:31 by rerodrig         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 //     The memcmp() function compares the first n bytes (each
 //    interpreted as unsigned char) of the memory areas s1 and s2.
 //    The memcmp() function returns an integer less than, equal to, or

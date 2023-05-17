@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/05/17 14:01:37 by rerodrig          #+#    #+#             */
+/*   Updated: 2023/05/17 14:01:39 by rerodrig         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 //   The memmove() function copies n bytes from memory area src to
 //    memory area dest.  The memory areas may overlap: copying takes
 //    place as though the bytes in src are first copied into a

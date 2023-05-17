@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/05/17 14:02:46 by rerodrig          #+#    #+#             */
+/*   Updated: 2023/05/17 14:02:47 by rerodrig         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 // str − This is the C string.
 
 // c − This is the character to be located. It is passed as its int promotion, but it is internally converted back to char.

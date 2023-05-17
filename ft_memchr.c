@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/05/17 14:01:25 by rerodrig          #+#    #+#             */
+/*   Updated: 2023/05/17 14:01:25 by rerodrig         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 //  The memchr() function scans the initial n bytes of the memory
 //        area pointed to by s for the first instance of c.  Both c and the
 //        bytes of the memory area pointed to by s are interpreted as

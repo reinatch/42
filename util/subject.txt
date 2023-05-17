@@ -183,3 +183,136 @@ Return value None
 External functs. write
 Description Outputs the integer ’n’ to the given file
 descriptor.
+
+
+
+
+
+Implement the following functions in order to easily use your lists.
+
+
+
+ft_lstnew
+t_list *ft_lstnew(void *content);
+-
+content: The content to create the node with.
+The new node
+malloc
+Allocates (with malloc(3)) and returns a new node.
+The member variable ’content’ is initialized with
+the value of the parameter ’content’. The variable
+’next’ is initialized to NULL.
+
+
+ft_lstadd_front
+void ft_lstadd_front(t_list **lst, t_list *new);
+-
+lst: The address of a pointer to the first link of
+a list.
+new: The address of a pointer to the node to be
+added to the list.
+None
+None
+Adds the node ’new’ at the beginning of the list.
+
+
+ft_lstsize
+int ft_lstsize(t_list *lst);
+-
+lst: The beginning of the list.
+The length of the list
+None
+Counts the number of nodes in a list.
+
+
+
+ft_lstlast
+t_list *ft_lstlast(t_list *lst);
+-
+lst: The beginning of the list.
+Last node of the list
+None
+Returns the last node of the list.
+
+
+
+ft_lstadd_back
+void ft_lstadd_back(t_list **lst,
+-
+lst: The address of a pointer to
+a list.
+new: The address of a pointer to
+added to the list.
+None
+None
+Adds the node ’new’ at the end of
+t_list *new);
+the first link of
+the node to be
+the list.
+
+
+
+
+ft_lstdelone
+void ft_lstdelone(t_list *lst, void (*del)(void
+*));
+-
+lst: The node to free.
+del: The address of the function used to delete
+the content.
+None
+free
+Takes as a parameter a node and frees the memory of
+the node’s content using the function ’del’ given
+as a parameter and free the node. The memory of
+’next’ must not be freed.
+
+
+
+ft_lstclear
+void ft_lstclear(t_list **lst, void (*del)(void
+*));
+-
+lst: The address of a pointer to a node.
+del: The address of the function used to delete
+the content of the node.
+None
+free
+Deletes and frees the given node and every
+successor of that node, using the function ’del’
+and free(3).
+Finally, the pointer to the list must be set to
+NULL.
+
+
+
+ft_lstiter
+void ft_lstiter(t_list *lst, void (*f)(void *));
+-
+lst: The address of a pointer to a node.
+f: The address of the function used to iterate on
+the list.
+None
+None
+Iterates the list ’lst’ and applies the function
+’f’ on the content of each node.
+
+
+ft_lstmap
+t_list *ft_lstmap(t_list *lst, void *(*f)(void *),
+void (*del)(void *));
+-
+lst: The address of a pointer to a node.
+f: The address of the function used to iterate on
+the list.
+del: The address of the function used to delete
+the content of a node if needed.
+The new list.
+NULL if the allocation fails.
+malloc, free
+Iterates the list ’lst’ and applies the function
+’f’ on the content of each node. Creates a new
+list resulting of the successive applications of
+the function ’f’. The ’del’ function is used to
+delete the content of a node if needed.

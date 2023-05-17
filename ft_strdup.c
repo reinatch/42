@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/05/17 14:02:10 by rerodrig          #+#    #+#             */
+/*   Updated: 2023/05/17 14:02:11 by rerodrig         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 // strdup is a standard library function in the C programming language that duplicates a string. It creates a new memory block and copies the contents of the original string to the new memory block. Its syntax is as follows:
 
 // char *strdup(const char *s);

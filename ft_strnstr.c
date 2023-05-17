@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/05/17 14:02:42 by rerodrig          #+#    #+#             */
+/*   Updated: 2023/05/17 14:02:43 by rerodrig         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 // strnstr - locate a substring in a string
 // The Fn strnstr function locates the first occurrence of the null-terminated string Fa little in the string Fa big , where not more than Fa len characters are searched. Characters that appear after a `\0' character are not searched. Since the Fn strnstr function is a Fx specific API, it should only be used when portability is not a concern.
 // If Fa little is an empty string, Fa big is returned; if Fa little occurs nowhere in Fa big , NULL is returned; otherwise a pointer to the first character of the first occurrence of Fa little is returned.
