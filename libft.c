@@ -225,6 +225,22 @@ int main(int ac, char **av)
 	// printf("%d", substring(bufsubstr, 4, (ft_strlen(bufsubstr) - 4)));
 	printf("%s", ft_substr(bufsubstr, 14, (ft_strlen(bufsubstr) - 4)));
 	// }
+
+
+
+	//LINKED LISTS
+
+	char	*str;
+
+	t_list	*elem;
+	str = (char *)malloc(6*sizeof(char));
+	str = "Hello";
+	elem = ft_lstnew((void *)str);
+	printf("%s\n", (char *)elem->content);
+	// free(head->content);
+
+
+
 	printf("\n");
 
 	return 0;
