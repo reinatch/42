@@ -6,17 +6,16 @@
 /*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/23 18:19:19 by rerodrig          #+#    #+#             */
-/*   Updated: 2023/05/17 14:01:08 by rerodrig         ###   ########.fr       */
+/*   Updated: 2023/05/29 14:20:57 by rerodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-    //    isascii()
-    //           checks whether c is a 7-bit unsigned char value that  fits  into
-    //           the ASCII character set.
-
+//           checks whether c is a 7-bit unsigned char value that  fits  into
+//           the ASCII character set.
 #include "libft.h"
 
-int ft_isascii(int c) {
+int	ft_isascii(int c)
+{
 	if (c >= 0 && c <= 127)
 	{
 		return (1);

@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    makefile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/23 18:04:16 by rerodrig          #+#    #+#              #
-#    Updated: 2023/05/25 01:04:03 by rerodrig         ###   ########.fr        #
+#    Updated: 2023/05/29 16:20:40 by rerodrig         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,17 +24,23 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar rc $(NAME) $(OBJ)
 
-bonus: $(OBJS) $(BONUS_OBJS)
-	ar rc $(NAME) $(BONUS_OBJS) $(OBJS)
+bonus: $(OBJ) $(BONUS_OBJS)
+	ar rc $(NAME) $(BONUS_OBJS) $(OBJ)
 
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+# %.o: %.c
+# 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(BONUS_OBJS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+rebonus: fclean bonus
+
+so:
+	$(CC) -nostartfiles -fPIC $(FLAGS) $(SRC) $(BONUS_SRCS)
+	cc -nostartfiles -shared -o libft.so $(SRC) $(BONUS_SRCS)

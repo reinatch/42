@@ -6,7 +6,7 @@
 /*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 15:44:06 by rerodrig          #+#    #+#             */
-/*   Updated: 2023/05/25 00:15:36 by rerodrig         ###   ########.fr       */
+/*   Updated: 2023/05/29 14:25:37 by rerodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,14 +33,10 @@
 // 	new->next = *lst;
 // 	*lst = new;
 // }
-void ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (lst == NULL || new == NULL)
 		return ;
 	new->next = *lst;
 	*lst = new;
-
 }
-
-
-

@@ -6,7 +6,7 @@
 /*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 15:43:40 by rerodrig          #+#    #+#             */
-/*   Updated: 2023/05/25 00:02:02 by rerodrig         ###   ########.fr       */
+/*   Updated: 2023/05/29 14:33:57 by rerodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@
 // the value of the parameter ’content’. The variable
 // ’next’ is initialized to NULL.
 
-t_list *ft_lstnew(void *content)
+t_list	*ft_lstnew(void *content)
 {
-	t_list *head;
+	t_list	*head;
 
 	head = (t_list *)malloc(sizeof(t_list));
 	if (!head)
@@ -33,4 +33,3 @@ t_list *ft_lstnew(void *content)
 	head->next = NULL;
 	return (head);
 }
-

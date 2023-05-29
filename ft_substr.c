@@ -6,10 +6,11 @@
 /*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 14:02:56 by rerodrig          #+#    #+#             */
-/*   Updated: 2023/05/17 14:02:56 by rerodrig         ###   ########.fr       */
+/*   Updated: 2023/05/29 15:09:19 by rerodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 // Function name ft_substr
 // Prototype char *ft_substr(char const *s, unsigned int start,
 // size_t len);
@@ -25,9 +26,7 @@
 // The substring begins at index ’start’ and is of
 // maximum size ’len’.
 
-#include "libft.h"
-
-char *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*subst;
 	size_t	size;

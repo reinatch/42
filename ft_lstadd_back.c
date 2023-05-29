@@ -6,12 +6,11 @@
 /*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 15:46:15 by rerodrig          #+#    #+#             */
-/*   Updated: 2023/05/25 00:53:16 by rerodrig         ###   ########.fr       */
+/*   Updated: 2023/05/29 14:24:33 by rerodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 // ft_lstadd_back
 // void ft_lstadd_back(t_list **lst,
 // -
@@ -26,24 +25,10 @@
 // the first link of
 // the node to be
 // // the list.
-// void	ft_lstadd_back(t_list **lst, t_list *new)
-// {
-// 	t_list	*sp;
 
-// 	if (lst)
-// 	{
-// 		if (*lst)
-// 		{
-// 			sp = ft_lstlast(*lst);
-// 			sp->next = new;
-// 		}
-// 		else
-// 			*lst = new;
-// 	}
-// }
-void ft_lstadd_back(t_list **lst,t_list *new)
+void	ft_lstadd_back(t_list	**lst, t_list	*new)
 {
-	t_list *tmp;
+	t_list	*tmp;
 
 	if (*lst == NULL)
 	{
@@ -54,5 +39,4 @@ void ft_lstadd_back(t_list **lst,t_list *new)
 	while (tmp -> next)
 		tmp = tmp -> next;
 	tmp -> next = new;
-
 }

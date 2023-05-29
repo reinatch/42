@@ -6,7 +6,7 @@
 /*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 15:47:13 by rerodrig          #+#    #+#             */
-/*   Updated: 2023/05/25 00:53:40 by rerodrig         ###   ########.fr       */
+/*   Updated: 2023/05/29 14:30:30 by rerodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,9 @@
 // None
 // Iterates the list ’lst’ and applies the function
 // ’f’ on the content of each node.
-
-
 // void	ft_lstiter(t_list *lst, void (*f)(void *))
 // {
 // 	t_list	*move;
-
 // 	if (!lst)
 // 		return ;
 // 	move = lst;
@@ -36,7 +33,7 @@
 // 		move = move->next;
 // 	}
 // }
-void ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (!lst)
 		return ;
@@ -45,6 +42,4 @@ void ft_lstiter(t_list *lst, void (*f)(void *))
 		(*f)(lst -> content);
 		lst = lst -> next;
 	}
-
-
 }

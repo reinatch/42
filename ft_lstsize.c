@@ -6,7 +6,7 @@
 /*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 15:45:21 by rerodrig          #+#    #+#             */
-/*   Updated: 2023/05/25 00:15:09 by rerodrig         ###   ########.fr       */
+/*   Updated: 2023/05/29 14:34:24 by rerodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 // None
 // Counts the number of nodes in a list.
 
-int ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
 	int	i;
 
@@ -30,5 +30,4 @@ int ft_lstsize(t_list *lst)
 		i++;
 	}
 	return (i);
-
 }

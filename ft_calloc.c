@@ -6,7 +6,7 @@
 /*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 14:00:43 by rerodrig          #+#    #+#             */
-/*   Updated: 2023/05/17 14:00:45 by rerodrig         ###   ########.fr       */
+/*   Updated: 2023/05/29 14:11:36 by rerodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,13 +32,13 @@
 //        The free() function returns no value.
 #include "libft.h"
 
-void *ft_calloc(size_t n, size_t size)
+void	*ft_calloc(size_t n, size_t size)
 {
-    void *p;
+	void	*p;
 
-    p = malloc(n * size);
-    if (!p)
-        return NULL;
-    ft_bzero(p, n * size);
-    return p;
+	p = malloc(n * size);
+	if (!p)
+		return (NULL);
+	ft_bzero(p, n * size);
+	return (p);
 }

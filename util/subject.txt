@@ -32,6 +32,10 @@ fclean: clean
 	rm -f $(NAME)
 re: fclean all
 
+cc -Wall -Wextra -Werror libft.c -lft -L libft.a -I libft.h
+
+
+
 
 
 III.3 Part 2 - Additional functions
