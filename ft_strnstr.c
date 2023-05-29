@@ -30,7 +30,7 @@
 
 // The strnstr function works by searching for the first occurrence of the substring needle within the first n characters of haystack. If the substring is found, a pointer to the beginning of the substring within haystack is returned. If the substring is not found within the first n characters of haystack, the function returns NULL.
 
-#include "./include/libft.h"
+#include "libft.h"
 char *ft_strnstr(const char *big, const char *little, size_t len)
 {
     size_t k;

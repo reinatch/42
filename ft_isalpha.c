@@ -17,7 +17,7 @@
 // Its return value is non-zero value if c is an alphabet, else it returns 0.
 // It is defined in header file <ctype.h>
 
-#include "./include/libft.h"
+#include "libft.h"
 
 int ft_isalpha(int c)
 {

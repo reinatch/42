@@ -22,21 +22,23 @@
 // If the first differing character in str1 is greater than the corresponding character in str2, it returns a positive value.
 // Note that strncmp only compares the first n characters of the strings. If the strings are shorter than n
 
-#include "./include/libft.h"
+#include "libft.h"
 
 int ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-    size_t i;
+	unsigned char	*ptr1;
+	unsigned char	*ptr2;
 
-    i = 0;
-    while (i < n && s1[i] && s1[i] == s2[i])
-        i++;
-    if (i == n)
-    {
-        return (0);
-    }
-    else
-    {
-        return s1[i] - s2[i];
-    }
+	ptr1 = (unsigned char *)s1;
+	ptr2 = (unsigned char *)s2;
+	while (n && *ptr1 && *ptr1 == *ptr2)
+	{
+		++ptr1;
+		++ptr2;
+		--n;
+	}
+	if (n)
+		return (*ptr1 - *ptr2);
+	else
+		return (0);
 }

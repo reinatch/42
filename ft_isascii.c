@@ -14,7 +14,7 @@
     //           checks whether c is a 7-bit unsigned char value that  fits  into
     //           the ASCII character set.
 
-#include "./include/libft.h"
+#include "libft.h"
 
 int ft_isascii(int c) {
 	if (c >= 0 && c <= 127)

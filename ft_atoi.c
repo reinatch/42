@@ -17,7 +17,7 @@
 
 //    except that atoi() does not detect errors.
 
-#include "./include/libft.h"
+#include "libft.h"
 int ft_atoi(const char *nptr)
 {
     int i;

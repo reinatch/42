@@ -17,7 +17,7 @@
 
 // s - A pointer to the string to be duplicated.
 // The function returns a pointer to the new duplicated string, or NULL if the memory allocation fails.
-#include "./include/libft.h"
+#include "libft.h"
 char *ft_strdup(const char *s)
 {
     size_t len;

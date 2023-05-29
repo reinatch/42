@@ -18,7 +18,7 @@
 //    matching byte or NULL if the character does not occur in the
 //    given memory area.
 
-#include "./include/libft.h"
+#include "libft.h"
 void *ft_memchr(const void *s, int c, size_t n)
 {
     const unsigned char *p;

@@ -26,7 +26,7 @@
 // Like snprintf(3), the strlcpy() and strlcat() functions return the total length of the string they tried to create. For strlcpy() that means the length of src. For strlcat() that means the initial length of dst plus the length of src.
 
 // If the return value is >= dstsize, the output string has been truncated. It is the caller's responsibility to handle this.
-#include "./include/libft.h"
+#include "libft.h"
 
 size_t ft_strlcpy(char *dst, const char *src, size_t size)
 {

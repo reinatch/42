@@ -15,7 +15,7 @@
 // Alphanumeric: A character that is either a letter or a number.
 // Syntax: int isalnum(int x);
 
-#include "./include/libft.h"
+#include "libft.h"
 
 int ft_isalnum(int c)
 {

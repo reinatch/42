@@ -15,7 +15,7 @@
 // The strlen() function takes a string as an argument and returns its length. The returned value is of type size_t (an unsigned integer type).
 
 // It is defined in the <string.h> header file
-#include "./include/libft.h"
+#include "libft.h"
 
 size_t ft_strlen(const char *s)
 {

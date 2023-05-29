@@ -15,16 +15,15 @@
 
 char *ft_strchr(const char *s, int c)
 {
-    char *k;
+	int	i;
 
-    k = (char *)s;
-    while (*k)
-    {
-        if (*k == (unsigned char)c)
-            return (k);
-        k++;
-    }
-    if (c == 0)
-        return (k);
-    return (0);
+	i = 0;
+	while (s[i] != c)
+	{
+		if (!s[i])
+			return (0);
+		i++;
+	}
+	return ((char *)(s + i));
+
 }
