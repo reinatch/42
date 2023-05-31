@@ -96,11 +96,22 @@ int main(int ac, char **av)
 	size_t n = strlcpy(buffer, string, ac);
 	printf("ft_strlcpy:Copied '%s' into '%s', length %zu\n", string, buffer, m);
 	printf("strlcpy:Copied '%s' into '%s', length %zu\n", string, buffer, n);
+
+
+
+
 	// size_t ft_strlcat(char *dst, const char *src, size_t size);
 	size_t o = ft_strlcat(buffer, string, ac);
 	size_t p = strlcat(buffer, string, ac);
+	char	babu[0xF] = "nyan !";
+	size_t testar = strlcat(NULL, babu, 0);
+
 	printf("ft_strlcat:Copied '%s' into '%s', length %zu\n", string, buffer, o);
 	printf("strlcat:Copied '%s' into '%s', length %zu\n", string, buffer, p);
+	printf("strlcat: into '%s', length %zu\n", babu, testar);
+
+
+
 	// char *ft_strchr(const char *s, int c);
 	char *q = ft_strchr(try, f);
 	char *r = strchr(try, f);

@@ -6,7 +6,7 @@
 /*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 14:02:23 by rerodrig          #+#    #+#             */
-/*   Updated: 2023/05/29 14:58:09 by rerodrig         ###   ########.fr       */
+/*   Updated: 2023/05/31 22:15:03 by rerodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	if (size == 0)
 	{
 		return (src_len);
+	}
+	if (dst == NULL)
+	{
+		return (0);
 	}
 	if (dst_len >= size)
 		return (size + ft_strlen(src));

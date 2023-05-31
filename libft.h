@@ -6,7 +6,7 @@
 /*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 13:33:54 by rerodrig          #+#    #+#             */
-/*   Updated: 2023/05/29 15:39:41 by rerodrig         ###   ########.fr       */
+/*   Updated: 2023/05/31 22:09:06 by rerodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void		*ft_memchr(const void *s, int c, size_t n);
 int			ft_memcmp(const void *s1, const void *s2, size_t n);
 
 int			ft_atoi(const char *nptr);
-void		*ft_calloc(size_t n, size_t size);
+void		*ft_calloc(size_t nmemb, size_t size);
 
 // 2nd
 char		*ft_substr(char const *s, unsigned int start, size_t len);
