@@ -6,7 +6,7 @@
 /*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 14:02:14 by rerodrig          #+#    #+#             */
-/*   Updated: 2023/05/17 14:02:15 by rerodrig         ###   ########.fr       */
+/*   Updated: 2023/06/09 16:32:56 by rerodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	}
 }
 
-/*void	ft_test(unsigned int i, char *str)
-    {
-        *str += i;
-    }
-int	main()
-{
-    char	str[] = "aBcDeF";
-    ft_striteri(str, ft_test);
-    ft_putendl_fd(str, 1);
-}*/

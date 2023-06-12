@@ -6,7 +6,7 @@
 /*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 14:02:18 by rerodrig          #+#    #+#             */
-/*   Updated: 2023/05/29 14:53:37 by rerodrig         ###   ########.fr       */
+/*   Updated: 2023/06/09 16:33:09 by rerodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (dest);
 }
 
-/*int	main()
-{
-    char	str[] = "Junta te a mim, ";
-    char	str1[] = "nos ja vivemos 100 mil anos!";
-    ft_putendl_fd(ft_strjoin(str, str1), 1);
-}*/

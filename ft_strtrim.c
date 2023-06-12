@@ -6,7 +6,7 @@
 /*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 14:02:52 by rerodrig          #+#    #+#             */
-/*   Updated: 2023/05/17 14:02:53 by rerodrig         ###   ########.fr       */
+/*   Updated: 2023/06/09 16:34:39 by rerodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 /*int	main()
 {
-    char	str[] = "Where's Wally?";
-    char	str1[] = "Wally";
+    char	str[] = "ondeb ondeb?";
+    char	str1[] = "ondeb";
     ft_putendl_fd(ft_strtrim(str, str1), 1);
 }*/

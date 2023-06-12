@@ -6,7 +6,7 @@
 /*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 15:47:44 by rerodrig          #+#    #+#             */
-/*   Updated: 2023/05/29 14:33:12 by rerodrig         ###   ########.fr       */
+/*   Updated: 2023/06/09 16:31:45 by rerodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,23 +54,3 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (move);
 }
-
-// t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
-// {
-// 	t_list	*head;
-// 	t_list	*tmp;
-
-// 	head = NULL;
-// 	while (lst)
-// 	{
-// 		tmp = ft_lstnew((*f)(lst -> content));
-// 		if (!tmp)
-// 		{
-// 			ft_lstclear(&head, del);
-// 			return (NULL);
-// 		}
-// 		ft_lstadd_back(&head, tmp);
-// 		lst = lst -> next;
-// 	}
-// 	return (head);
-// }

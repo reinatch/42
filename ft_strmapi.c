@@ -6,7 +6,7 @@
 /*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 14:02:35 by rerodrig          #+#    #+#             */
-/*   Updated: 2023/05/17 14:02:36 by rerodrig         ###   ########.fr       */
+/*   Updated: 2023/06/09 16:33:34 by rerodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	new[i] = 0;
 	return (new);
 }
-
-/*char	ft_test(unsigned int i, char s)
-{
-    s += i;
-}
-int	main()
-{
-    char	str[] = "Ola";
-    ft_putendl_fd(ft_strmapi(str, ft_test), 1);
-}*/

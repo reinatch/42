@@ -6,7 +6,7 @@
 /*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 14:02:05 by rerodrig          #+#    #+#             */
-/*   Updated: 2023/05/29 14:50:47 by rerodrig         ###   ########.fr       */
+/*   Updated: 2023/06/12 15:57:36 by rerodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strchr(const char *s, int c)
 	int	i;
 
 	i = 0;
-	while (s[i] != c)
+	while (s[i] != c && s[i] != '\0')
 	{
 		if (!s[i])
 			return (0);

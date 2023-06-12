@@ -6,7 +6,7 @@
 /*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 15:46:54 by rerodrig          #+#    #+#             */
-/*   Updated: 2023/05/29 14:28:44 by rerodrig         ###   ########.fr       */
+/*   Updated: 2023/06/09 16:31:13 by rerodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,20 +27,6 @@
 // Finally, the pointer to the list must be set to
 // NULL.
 
-// void	*ft_lstclear(t_list **lst, void (*del)(void*))
-// {
-// 	t_list	*move;
-
-// 	if (!lst)
-// 		return (0);
-// 	while (*lst != NULL)
-// 	{
-// 		move = (*lst)->next;
-// 		ft_lstdelone(*lst, del);
-// 		*lst = move;
-// 	}
-// 	return (0);
-// }
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*head;

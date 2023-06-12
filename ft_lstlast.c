@@ -6,7 +6,7 @@
 /*   By: rerodrig <rerodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 15:45:39 by rerodrig          #+#    #+#             */
-/*   Updated: 2023/05/29 14:31:51 by rerodrig         ###   ########.fr       */
+/*   Updated: 2023/06/09 16:31:35 by rerodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 // Last node of the list
 // None
 // Returns the last node of the list.
+
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (lst == NULL)
